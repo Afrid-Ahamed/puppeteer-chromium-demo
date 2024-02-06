@@ -39,7 +39,7 @@ describe("basic", async () => {
       expect(text).toBe("Clicked 1 time(s)");
     } catch (e) {
       console.error(e);
-      expect(e).toBeUndefined(); // Line causes error
+      expect(e).toBeUndefined(); // Line causes error, if commented, tests pass though I'm unable to see the execution
     }
   }, 60_000);
 });
