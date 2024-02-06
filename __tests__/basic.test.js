@@ -39,7 +39,6 @@ describe("basic", async () => {
       expect(text).toBe("Clicked 1 time(s)");
     } catch (e) {
       console.error(e);
-      console.error(typeof e); // Log the type of the error
       expect(e).toBeUndefined(); // Line causes error
     }
   }, 60_000);
